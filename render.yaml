@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: resume-analyzer-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node app.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: AI_API_KEY
+        sync: false
+      - key: AI_MODEL
+        value: gemini-1.5-flash
+      - key: ALLOWED_ORIGINS
+        sync: false
+
+  - type: web
+    name: resume-analyzer-frontend
+    env: static
+    buildCommand: cd frontend/project && npm install && npm run build
+    staticPublishPath: frontend/project/dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false

@@ -75,7 +75,8 @@ const UploadPage = () => {
       const formData = new FormData();
       formData.append("file", file);
 
-      const response = await fetch("http://localhost:3000/api/extract-text", {
+      const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000";
+      const response = await fetch(`${apiUrl}/api/extract-text`, {
         method: "POST",
         body: formData,
       });
