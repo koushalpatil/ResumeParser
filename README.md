@@ -22,9 +22,9 @@ Welcome to the **Resume Analyzer & Feedback Generator** – an intelligent, user
 
 ## 🖼️ Demo
 
-![Demo GIF or Screenshot here](./demo/demo.gif)
-
-> ⚠️ _Replace this with your actual demo GIF or image showing how the app works._
+![Demo GIF or Screenshot here](captures/cap-1.png)
+![Demo GIF or Screenshot here](captures/cap-2.png)
+![Demo GIF or Screenshot here](captures/cap-3.png)
 
 ---
 
