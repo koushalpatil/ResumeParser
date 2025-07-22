@@ -7,8 +7,8 @@ const config = {
     env: process.env.NODE_ENV || "development",
   },
   ai: {
-    apiKey: process.env.AI_API_KEY || "AIzaSyAEyS1rzulVYajaWVnwsH0rkeDg9z2xfsA", // It's recommended to use environment variables for API keys
-    model: process.env.AI_MODEL || "gemini-1.5-flash",
+    apiKey: process.env.AI_API_KEY,
+    model: process.env.AI_MODEL,
   },
   upload: {
     destination: "uploads/",
