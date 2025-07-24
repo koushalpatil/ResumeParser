@@ -89,7 +89,8 @@ const UploadPage = () => {
       formData.append("file", file);
       formData.append("jobDescription", jobDescription);
 
-      const response = await fetch("http://localhost:3000/api/extract-text", {
+      const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000";
+      const response = await fetch(`${apiUrl}/api/extract-text`, {
         method: "POST",
         body: formData,
       });
