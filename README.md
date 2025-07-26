@@ -16,8 +16,7 @@ Welcome to the **Resume Analyzer & Feedback Generator** – an intelligent, user
 - Missing key skills or sections  
 - Tone, formatting, and grammar suggestions  
 - **JD-based insights** – highlights perks, gaps, missing keywords, and skills based on the uploaded job description  
-✅ Easy-to-use, responsive user interface  
-✅ Built with scalability and performance in mind
+
 
 ---
 
